@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PureSmile Dental – Austin, TX | US-Style Modern Practice</title>
+  <meta name="description" content="PureSmile Dental in Austin, TX offers premium modern dentistry. Experience our bold navy aesthetic, transparent pricing, and world-class care.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER / NAVIGATION -->
+  <header>
+    <div class="container nav-container">
+      <a href="#home" class="logo">
+        PURESMILE <span class="logo-dot"></span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home" class="active" id="nav-home">Home</a></li>
+        <li><a href="#services" id="nav-services">Services</a></li>
+        <li><a href="#gallery" id="nav-gallery">Smile Gallery</a></li>
+        <li><a href="#book" id="nav-book">Book Now</a></li>
+      </ul>
+      <button class="btn btn-primary nav-cta" onclick="navigateToPage('book')">Book Online</button>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MAIN APP CONTAINER -->
+  <main>
+
+    <!-- ============================================== -->
+    <!-- HOME PAGE VIEW -->
+    <!-- ============================================== -->
+    <div id="view-home" class="page-view active">
+      
+      <!-- HERO SECTION -->
+      <section class="hero">
+        <div class="video-background-container">
+          <video class="hero-video" autoplay loop muted playsinline poster="assets/dentist_hero_bg.png">
+            <source src="https://player.vimeo.com/external/494252666.sd.mp4?s=d740c061266b74e6b12a8a7db302213ba641951f&profile_id=165&oauth2_token_id=57447761" type="video/mp4">
+            <!-- Fallback back-up video -->
+            <source src="https://player.vimeo.com/external/371433846.sd.mp4?s=236da2f3c054ba208d3e0851f50f612089f2ef0e&profile_id=165&oauth2_token_id=57447761" type="video/mp4">
+          </video>
+          <div class="hero-overlay"></div>
+        </div>
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-badge">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 6px;"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              US-Style Modern Dental Practice
+            </div>
+            <h1>PureSmile Dental<br><span>Austin, TX</span></h1>
+            <p>Elevating the art of modern dentistry. Experience premium patient care, state-of-the-art diagnostics, and stunning cosmetic results in a bold, navy-styled boutique environment.</p>
+            <div class="hero-buttons">
+              <button class="btn btn-primary" onclick="navigateToPage('book')">Book Appointment</button>
+              <button class="btn btn-secondary" onclick="navigateToPage('services')">Our Services</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- CLINICAL PORTRAIT / HIGHLIGHT SECTION -->
+      <section class="highlight-section-container">
+        <div class="container">
+          <div class="highlight-section">
+            <div class="highlight-image-wrapper">
+              <img src="assets/dentist_hospital_setting.png" alt="PureSmile Lead Dentist in Clinical Hospital Setting" class="highlight-img">
+            </div>
+            <div class="highlight-content">
+              <span class="section-tag">Clinical Excellence</span>
+              <h2>Where Premium Comfort Meets Hospital-Grade Standards</h2>
+              <p>At PureSmile Dental, we combine the comfortable, upscale experience of a modern boutique studio with the strict sanitary and technical rigor of a hospital-grade surgical setting.</p>
+              <p>Under the leadership of our specialist team, we utilize advanced 3D scanning, laser therapies, and rigorous sterilization protocols to ensure that your treatment is exceptionally safe, precise, and pain-free.</p>
+              <button class="btn btn-secondary" onclick="navigateToPage('services')" style="margin-top: 20px;">Explore Our Technology</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TREATMENT PACKAGES & PRICING -->
+      <section style="background-color: var(--color-bg-dark);">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Pricing Transparency</span>
+            <h2 class="section-title">Exclusive Treatment Packages</h2>
+          </div>
+          <div class="packages-grid">
+            
+            <!-- Package 1 -->
+            <div class="package-card">
+              <h3>New Patient Special</h3>
+              <p class="package-description">Comprehensive entry exam and cleaning for all new Austin patients.</p>
+              <div class="package-price">
+                <span class="price-currency">$</span>
+                <span class="price-amount">99</span>
+                <span class="price-period">/ one-time</span>
+              </div>
+              <ul class="package-features">
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  Professional dental cleaning
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  Comprehensive oral exam
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  Full-mouth digital X-rays
+                </li>
+              </ul>
+              <button class="btn btn-secondary" onclick="navigateToPage('book')">Reserve Special</button>
+            </div>
+
+            <!-- Package 2 (Popular) -->
+            <div class="package-card" style="border-color: var(--color-accent);">
+              <div class="package-popular-badge">Popular</div>
+              <h3>Smile Whitening</h3>
+              <p class="package-description">Professional high-potency teeth whitening for instant, dazzling results.</p>
+              <div class="package-price">
+                <span class="price-currency">$</span>
+                <span class="price-amount">299</span>
+                <span class="price-period">/ session</span>
+              </div>
+              <ul class="package-features">
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  In-chair laser activation
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  Up to 8 shades lighter
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  Custom take-home touch-up kit
+                </li>
+              </ul>
+              <button class="btn btn-primary" onclick="navigateToPage('book')">Book Whitening</button>
+            </div>
+
+            <!-- Package 3 -->
+            <div class="package-card">
+              <h3>Clear Aligner Club</h3>
+              <p class="package-description">Align your teeth discreetly with state-of-the-art custom aligners.</p>
+              <div class="package-price">
+                <span class="price-currency">$</span>
+                <span class="price-amount">2999</span>
+                <span class="price-period">/ full plan</span>
+              </div>
+              <ul class="package-features">
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  3D digital aligner modeling
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  All custom trays included
+                </li>
+                <li>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                  Post-treatment dental retainers
+                </li>
+              </ul>
+              <button class="btn btn-secondary" onclick="navigateToPage('book')">Request Consult</button>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- PATIENT TESTIMONIALS -->
+      <section class="testimonials-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Reviews</span>
+            <h2 class="section-title">Patient Testimonials</h2>
+          </div>
+          <div class="testimonials-slider-container">
+            <div class="testimonial-track" id="testimonial-track">
+              
+              <!-- Slide 1 -->
+              <div class="testimonial-card active">
+                <div class="testimonial-stars">
+                  <!-- 5 Stars -->
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+                <p class="testimonial-text">"PureSmile Dental completely changed how I feel about going to the dentist. The design is absolutely gorgeous, the dark navy vibe feels like a premium hotel lobby, and my teeth whitening results are stunning!"</p>
+                <img src="assets/smile_gallery_two.png" alt="Sarah M." class="testimonial-author-img">
+                <div class="testimonial-author-name">Sarah Mitchell</div>
+                <div class="testimonial-author-title">Austin, TX</div>
+              </div>
+
+              <!-- Slide 2 -->
+              <div class="testimonial-card">
+                <div class="testimonial-stars">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+                <p class="testimonial-text">"The level of technology they use here is incredible. It feels like a hospital-grade surgery but looks and feels like a modern wellness retreat. Getting aligners was completely hassle-free."</p>
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&h=150&q=80" alt="Marcus V." class="testimonial-author-img">
+                <div class="testimonial-author-name">Marcus Vance</div>
+                <div class="testimonial-author-title">West Lake Hills, TX</div>
+              </div>
+
+              <!-- Slide 3 -->
+              <div class="testimonial-card">
+                <div class="testimonial-stars">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                </div>
+                <p class="testimonial-text">"Exceptional care. The transparent pricing structure meant no surprise bills. Their $99 New Patient Special was exactly as advertised. Very highly recommended!"</p>
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&h=150&q=80" alt="Dr. Amanda R." class="testimonial-author-img">
+                <div class="testimonial-author-name">Amanda Ross</div>
+                <div class="testimonial-author-title">Downtown Austin</div>
+              </div>
+
+            </div>
+
+            <!-- Slider Controls -->
+            <div class="slider-controls">
+              <button class="slider-btn" id="prev-testimonial" aria-label="Previous Testimonial">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></svg>
+              </button>
+              <div class="slider-dots" id="slider-dots">
+                <span class="slider-dot active" data-index="0"></span>
+                <span class="slider-dot" data-index="1"></span>
+                <span class="slider-dot" data-index="2"></span>
+              </div>
+              <button class="slider-btn" id="next-testimonial" aria-label="Next Testimonial">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- INSTAGRAM FEED SECTION -->
+      <section style="background-color: var(--color-bg-darkest);">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Follow Us</span>
+            <h2 class="section-title">Instagram Feed Section</h2>
+          </div>
+          <div class="insta-grid">
+            
+            <!-- Insta Post 1 -->
+            <div class="insta-item">
+              <img src="assets/dentist_hero_bg.png" alt="PureSmile Modern Clinic Layout" class="insta-img">
+              <div class="insta-overlay">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                <div class="insta-stats">
+                  <span>❤️ 142</span>
+                  <span>💬 12</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Insta Post 2 -->
+            <div class="insta-item">
+              <img src="assets/smile_gallery_one.png" alt="Healthy White Smile" class="insta-img">
+              <div class="insta-overlay">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                <div class="insta-stats">
+                  <span>❤️ 311</span>
+                  <span>💬 24</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Insta Post 3 -->
+            <div class="insta-item">
+              <img src="assets/dentist_hospital_setting.png" alt="Specialist Dentist" class="insta-img">
+              <div class="insta-overlay">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                <div class="insta-stats">
+                  <span>❤️ 219</span>
+                  <span>💬 18</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Insta Post 4 -->
+            <div class="insta-item">
+              <img src="assets/smile_gallery_two.png" alt="Smiling Patient Clinic Visit" class="insta-img">
+              <div class="insta-overlay">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                <div class="insta-stats">
+                  <span>❤️ 405</span>
+                  <span>💬 33</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ============================================== -->
+    <!-- SERVICES PAGE VIEW -->
+    <!-- ============================================== -->
+    <div id="view-services" class="page-view">
+      <section>
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">What We Do</span>
+            <h2 class="section-title">Our Dental Services</h2>
+          </div>
+          <p class="services-intro">We provide standard-defining dental care tailored to your unique requirements. Explore our specialized services and see how we blend safety, technology, and cosmetics.</p>
+          
+          <div class="services-detail-grid">
+            
+            <!-- Service 1 -->
+            <div class="service-detail-card">
+              <div class="service-icon-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+              </div>
+              <h3>Preventive Dentistry</h3>
+              <p>Keep your teeth healthy and bright. We provide meticulous cleanings, deep checks, and hospital-grade diagnostic protocols to prevent issues before they occur.</p>
+              <ul class="service-features-list">
+                <li>Professional Scaling & Polish</li>
+                <li>Digital Full-Mouth X-Rays</li>
+                <li>Oral Cancer Screenings</li>
+              </ul>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-detail-card">
+              <div class="service-icon-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              </div>
+              <h3>Cosmetic Makeovers</h3>
+              <p>Enhance your smile's alignment and shine. From boutique veneers to laser teeth whitening, we sculpt smiles that boost confidence and glow.</p>
+              <ul class="service-features-list">
+                <li>Boutique Porcelain Veneers</li>
+                <li>Laser In-Office Whitening</li>
+                <li>Composite Bonding Artistry</li>
+              </ul>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-detail-card">
+              <div class="service-icon-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2.5 3.19-2.5 5.5h20c0-2.31-1-4.24-2.5-5.5"/><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 15c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z"/></svg>
+              </div>
+              <h3>Orthodontic Alignment</h3>
+              <p>Straighten your teeth comfortably and discreetly. Using premium 3D modeling scanners, we design custom clear aligner sets that yield fast results.</p>
+              <ul class="service-features-list">
+                <li>Clear Aligner Orthodontics</li>
+                <li>3D Smile Modeling</li>
+                <li>Custom Post-Aligner Retainers</li>
+              </ul>
+            </div>
+
+            <!-- Service 4 -->
+            <div class="service-detail-card">
+              <div class="service-icon-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <h3>Restorative Surgery</h3>
+              <p>Reclaim dental structure and function. We provide premium dental implants, ceramic crowns, and root canals using state-of-the-art anesthetic precision.</p>
+              <ul class="service-features-list">
+                <li>Titanium Dental Implants</li>
+                <li>Same-day Zirconia Crowns</li>
+                <li>Pain-free Root Canal Therapies</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ============================================== -->
+    <!-- SMILE GALLERY PAGE VIEW -->
+    <!-- ============================================== -->
+    <div id="view-gallery" class="page-view">
+      <section>
+        <div class="container">
+          <div class="section-header">
+            <span class="section-tag">Before & After</span>
+            <h2 class="section-title">Smile Gallery</h2>
+          </div>
+          
+          <!-- Category Filter -->
+          <div class="gallery-filter-bar">
+            <button class="filter-btn active" data-filter="all">All Treatments</button>
+            <button class="filter-btn" data-filter="whitening">Teeth Whitening</button>
+            <button class="filter-btn" data-filter="aligners">Clear Aligners</button>
+          </div>
+
+          <div class="gallery-grid">
+            
+            <!-- Gallery Item 1 -->
+            <div class="gallery-card" data-category="whitening">
+              <!-- Before/After Slider -->
+              <div class="ba-slider">
+                <!-- After Image -->
+                <img src="assets/smile_gallery_one.png" alt="Teeth Whitening After" class="ba-image ba-after">
+                <!-- Before Image (Clipped / Width adjusted) -->
+                <img src="assets/smile_gallery_one.png" alt="Teeth Whitening Before" class="ba-image ba-before" style="filter: sepia(0.35) saturate(0.65) contrast(0.95);">
+                <!-- Interactive slider bar -->
+                <div class="ba-handle">
+                  <div class="ba-handle-button">↔</div>
+                </div>
+              </div>
+              <div class="gallery-info">
+                <span class="gallery-category">Teeth Whitening</span>
+                <h3 class="gallery-title">In-Chair Laser Whitening</h3>
+                <p class="gallery-description">Laser whitening session completed in 45 minutes. Achieved 7 shades lighter.</p>
+              </div>
+            </div>
+
+            <!-- Gallery Item 2 -->
+            <div class="gallery-card" data-category="aligners">
+              <!-- Before/After Slider -->
+              <div class="ba-slider">
+                <!-- After Image -->
+                <img src="assets/smile_gallery_two.png" alt="Clear Aligners After" class="ba-image ba-after">
+                <!-- Before Image (Simulating minor misalignment using a rotate/skew filter context) -->
+                <img src="assets/smile_gallery_two.png" alt="Clear Aligners Before" class="ba-image ba-before" style="filter: grayscale(0.15) contrast(0.85); transform: scale(1.01) rotate(0.8deg) skewX(0.5deg);">
+                <!-- Interactive slider bar -->
+                <div class="ba-handle">
+                  <div class="ba-handle-button">↔</div>
+                </div>
+              </div>
+              <div class="gallery-info">
+                <span class="gallery-category">Clear Aligners</span>
+                <h3 class="gallery-title">Aligner Alignment Club</h3>
+                <p class="gallery-description">12-month alignment therapy resolved severe crowding. Safe, fast, and completely clear.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ============================================== -->
+    <!-- BOOK NOW PAGE VIEW -->
+    <!-- ============================================== -->
+    <div id="view-book" class="page-view">
+      <section>
+        <div class="container">
+          <div class="booking-section-wrapper">
+            
+            <div class="booking-info-box">
+              <span class="section-tag">Appointment Booking</span>
+              <h2>Book Your Visit Online</h2>
+              <p>Schedule your next premium dental experience with PureSmile Dental. Select your desired treatment package and time slot. Our concierge team will reach out to confirm details.</p>
+              
+              <div class="contact-details-list">
+                <div class="contact-detail-item">
+                  <div class="contact-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  </div>
+                  <div>
+                    <h4>Call Our Clinic</h4>
+                    <p>(512) 555-0199</p>
+                  </div>
+                </div>
+
+                <div class="contact-detail-item">
+                  <div class="contact-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  </div>
+                  <div>
+                    <h4>Email Concierge</h4>
+                    <p>hello@puresmiledental.com</p>
+                  </div>
+                </div>
+
+                <div class="contact-detail-item">
+                  <div class="contact-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  </div>
+                  <div>
+                    <h4>Visit Our Studio</h4>
+                    <p>123 Congress Ave, Austin, TX 78701</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Booking Card Form -->
+            <div class="booking-card" id="booking-container">
+              <form class="booking-form" id="booking-form" onsubmit="handleBookingSubmit(event)">
+                <div class="form-group-row">
+                  <div class="form-group">
+                    <label class="form-label" for="book-name">Full Name</label>
+                    <input type="text" class="form-input" id="book-name" required placeholder="John Doe">
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="book-email">Email Address</label>
+                    <input type="email" class="form-input" id="book-email" required placeholder="john@example.com">
+                  </div>
+                </div>
+
+                <div class="form-group-row">
+                  <div class="form-group">
+                    <label class="form-label" for="book-phone">Phone Number</label>
+                    <input type="tel" class="form-input" id="book-phone" required placeholder="(512) 555-0100">
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="book-package">Selected Package</label>
+                    <select class="form-select" id="book-package" required>
+                      <option value="" disabled selected>Choose a package</option>
+                      <option value="special">New Patient Special ($99)</option>
+                      <option value="whitening">Smile Whitening ($299)</option>
+                      <option value="aligners">Clear Aligner Club ($2999)</option>
+                      <option value="general">General Checkup / Consultation</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group-row">
+                  <div class="form-group">
+                    <label class="form-label" for="book-date">Preferred Date</label>
+                    <input type="date" class="form-input" id="book-date" required>
+                  </div>
+                  <div class="form-group">
+                    <label class="form-label" for="book-time">Preferred Time</label>
+                    <select class="form-select" id="book-time" required>
+                      <option value="" disabled selected>Select time slot</option>
+                      <option value="morning-1">Morning (9:00 AM - 11:00 AM)</option>
+                      <option value="morning-2">Midday (11:00 AM - 1:00 PM)</option>
+                      <option value="afternoon-1">Afternoon (1:00 PM - 3:00 PM)</option>
+                      <option value="afternoon-2">Late Afternoon (3:00 PM - 5:00 PM)</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="book-message">Additional Notes (OptionalLabel)</label>
+                  <textarea class="form-textarea" id="book-message" placeholder="Tell us about your dental history or any specific requirements."></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">Confirm Reservation Request</button>
+              </form>
+
+              <!-- SUCCESS STATE -->
+              <div class="booking-success-state" id="booking-success">
+                <div class="success-icon-box">
+                  <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                </div>
+                <h3>Reservation Requested!</h3>
+                <p style="color: var(--color-text-secondary); margin-top: 12px; margin-bottom: 24px;">Thank you for choosing PureSmile Dental. Our Austin concierge team will review your preferred slot and contact you shortly via email and phone.</p>
+                <button class="btn btn-secondary" onclick="resetBookingForm()">Book Another Appointment</button>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        
+        <div class="footer-col">
+          <h3 class="logo">PURESMILE <span class="logo-dot"></span></h3>
+          <p>A US-style modern practice offering high-end, comfortable clinical dental services in Austin, TX.</p>
+          <div class="footer-social-links">
+            <a href="#" class="social-btn" aria-label="Facebook">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="#" class="social-btn" aria-label="Twitter">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul class="footer-links">
+            <li><a href="#home" onclick="navigateToPage('home')">Home</a></li>
+            <li><a href="#services" onclick="navigateToPage('services')">Services</a></li>
+            <li><a href="#gallery" onclick="navigateToPage('gallery')">Smile Gallery</a></li>
+            <li><a href="#book" onclick="navigateToPage('book')">Book Online</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Treatments</h3>
+          <ul class="footer-links">
+            <li><a href="#services" onclick="navigateToPage('services')">Preventive Cleaning</a></li>
+            <li><a href="#services" onclick="navigateToPage('services')">Laser Whitening</a></li>
+            <li><a href="#services" onclick="navigateToPage('services')">Clear Aligners</a></li>
+            <li><a href="#services" onclick="navigateToPage('services')">Dental Implants</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3>Contact Info</h3>
+          <p>📍 123 Congress Ave, Austin, TX 78701</p>
+          <p>📞 (512) 555-0199</p>
+          <p>✉️ hello@puresmiledental.com</p>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 PureSmile Dental – Austin, TX. All rights reserved.</p>
+        <p>US-Style Modern Practice</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
